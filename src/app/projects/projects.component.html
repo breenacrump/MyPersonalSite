@@ -1,0 +1,16 @@
+<div class="projects">
+  <div class="projects-container">
+    <div class="project" *ngFor="let project of projects; let i = index">
+      <mat-card>
+          <mat-card-header>
+            <mat-card-title class="project-name">{{project.name}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src={{project.picUrl}}>
+          <mat-card-content>
+            <p>{{project.description}}</p>
+          </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+

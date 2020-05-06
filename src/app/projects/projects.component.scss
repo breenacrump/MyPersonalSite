@@ -1,0 +1,27 @@
+.projects {
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .project {
+      max-width: 35%;
+      flex: 0 50%;
+      padding: 2rem 4rem;
+
+      .mat-card-header {
+        padding-bottom: .5rem;
+        justify-content: center;
+
+        .project-name {
+          font-size: 20px;
+        }
+      }
+
+      .mat-card-content {
+        text-align: center;
+      }
+    }
+  }
+}

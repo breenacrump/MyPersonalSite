@@ -9,22 +9,26 @@ import { MatTabsModule, MatSidenavModule, MatListModule } from '@angular/materia
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { MglTimelineModule } from 'angular-mgl-timeline';
+import { ProjectsComponent } from './projects/projects.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
-	ExperienceComponent
+	  ExperienceComponent,
+	  ProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-	MatTabsModule,
-	MatSidenavModule,
-	MatListModule,
-	MglTimelineModule
+	  MatTabsModule,
+	  MatSidenavModule,
+	  MatListModule,
+	  MglTimelineModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
