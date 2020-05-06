@@ -1,0 +1,35 @@
+<div class='landing-view'>
+	<div class="main-header">
+		<div class="main-personal-container">
+			<img class="main-header-img" src="../assets/img/ProfilePic.jpg">
+			<h2 class="main-header-name">Breena Crump</h2>
+		</div>
+	</div>
+	<div class="main-container">
+		<mat-tab-group
+			mat-align-tabs="center" 
+			disableRipple=true
+			animationDuration="1000ms">
+			<mat-tab
+				label="About Me">
+				<ng-template matTabContent>
+					<about-me></about-me>
+				</ng-template>
+			</mat-tab>
+			<mat-tab
+				label="Experience">
+				<ng-template matTabContent>
+					<experience></experience>
+				</ng-template>
+			</mat-tab>
+			<mat-tab
+				label="Projects">
+				<ng-template matTabContent>
+					The Third Content
+				</ng-template>
+			</mat-tab>
+		</mat-tab-group>
+	</div>
+</div>
+
+<router-outlet></router-outlet>

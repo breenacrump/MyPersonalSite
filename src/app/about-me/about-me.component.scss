@@ -1,0 +1,23 @@
+.about-me {
+	//TODO: Need media query
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+
+	.about-me-text {
+		width: 30rem;
+		margin-right: 4rem;
+		color: rgb(196, 215, 245);
+	}
+	.about-me-pic {
+		width: 30rem;
+		height: 25rem;
+
+		.about-me-img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.experience {
+	// height: 40rem;
+	.timeline {
+		// height: 40rem;
+		.mat-drawer-container {
+			height: 16rem;
+			// width: 60%;
+			padding: 0 20% 0 20%; 
+
+			.mat-drawer {
+				padding-left: 2rem;
+			}
+
+			.mat-drawer-content {
+				padding: 7.5rem 0 7.5rem 2rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.landing-view {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    .main-header {
+		background-image: url('../assets/img/AbstractAiArt.jpg');
+		// TODO: Need a media query and small view will have background-size: auto;
+		background-size: cover;
+		background-position: top center;
+		background-color: rgba(255,255,255,0.15);
+		background-blend-mode: lighten;
+		height: 40%;
+        text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		.main-personal-container {
+			// opacity: 1 !important;
+	
+			.main-header-img {
+				//TODO:Need a media query
+				width: 12vw;
+				height: 25vh;
+				border-radius: 50%;
+			}
+
+			.main-header-name {
+				//TODO:Need a media query
+				margin: 0;
+				font-size: 2.5rem;
+				font-family: 'Helvetica', sans-serif;
+				letter-spacing: .5rem;
+				text-transform: uppercase;
+				color: rgb(253, 230, 101);
+			}
+		}
+	}
+
+    .main-container {
+		height: 60%;
+		
+		.mat-tab-group {
+			color: rgb(196, 215, 245);
+		}
+	}
+}
