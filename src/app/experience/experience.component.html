@@ -1,50 +1,23 @@
 <div class="experience">
-	<div class="timeline">
-		<mat-drawer-container>
-			<mat-drawer mode="side" opened>
-				<mat-nav-list>
-					<mat-list-item 
-						*ngFor="let event of events; let i = index"
-						(click)="eventClicked(i)">
-							{{event.label}}
-					</mat-list-item>
-				</mat-nav-list>
-			</mat-drawer>
-			<mat-drawer-content>
-				<!-- <div *ngIf="events[0].display">{{events[0].content}}</div>
-				<div *ngIf="events[1].display">{{events[1].content}}</div>
-				<div *ngIf="events[2].display">{{events[2].content}}</div>
-				<div *ngIf="events[3].display">{{events[3].content}}</div>
-				<div *ngIf="events[4].display">{{events[4].content}}</div>
-				<div *ngIf="events[5].display">{{events[5].content}}</div> -->
-				<div *ngFor="let event of events">
-					<div *ngIf="event.display">
-						{{event.content}}
-					</div>
-				</div>
-			</mat-drawer-content>
-		</mat-drawer-container>
-
-		<!-- <mat-sidenav-container>
-		<mat-sidenav mode="side" opened> HERE
-			<mat-list role="list">
-				<mat-list-item role="listitem">First Component</mat-list-item>
-				<mat-list-item role="listitem">Second Component</mat-list-item>
-			</mat-list>
-		</mat-sidenav>
-		<mat-sidenav-content>Main content</mat-sidenav-content>
-		</mat-sidenav-container> -->
-
-		<!-- <mat-sidenav-container class="example-container">
-			<mat-sidenav #drawer mode="side" opened role="navigation">
-				<mat-nav-list>
-					<a mat-list-item routerLink='/first'>First Component</a>
-					<a mat-list-item routerLink='/second'>Second Component</a>
-				</mat-nav-list>
-			</mat-sidenav>
-			<mat-sidenav-content>
-				<router-outlet></router-outlet>
-			</mat-sidenav-content>
-		</mat-sidenav-container> -->
-	</div>
+  <div class="timeline">
+    <mat-drawer-container>
+      <mat-drawer mode="side" opened>
+        <mat-nav-list>
+          <mat-list-item *ngFor="let event of events; let i = index"
+                         class="experience-list-item-container" [ngClass]="{'experience-underline' : event.display}"
+                         (click)="eventClicked(i)">
+            <div>{{event.label}}</div>
+          </mat-list-item>
+        </mat-nav-list>
+      </mat-drawer>
+      <mat-drawer-content>
+        <div *ngFor="let event of events">
+          <div class="event-display" *ngIf="event.display">
+            <h3>{{event.title}}</h3>
+            <p>{{event.content}}</p>
+          </div>
+        </div>
+      </mat-drawer-content>
+    </mat-drawer-container>
+  </div>
 </div>
