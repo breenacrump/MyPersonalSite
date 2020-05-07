@@ -8,6 +8,6 @@ import { MAT_DIALOG_DATA } from '@angular/material';
 })
 export class ProjectModalComponent {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: {}) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public data: {name: '', description: '', details: any, picUrl: '', linkInfo: any}) {}
 
 }
