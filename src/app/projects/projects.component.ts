@@ -18,9 +18,9 @@ export class ProjectsComponent {
       details: [
         'Implemented reusable global front-end components that was utilized across different modules and internal applications',
         'Collaborated with UX to implement features that tackled the business requirements and provided the best usability',
+        'Refactored the front-end data model that allowed the application to be used in parallel with another application called Crew Glass, which enabled more efficient time entry process in remote areas',
         'Lead the process of implementing end-to-end tests using Protractor which lead to a 95% increase in test coverage',
-        'Developed unit tests using Jasmine to adhere to best practices and increase code quality',
-        'Refactored the front-end data model that allowed the application to be used in parallel with another application called Crew Glass, which enabled more efficient time entry process in remote areas'
+        'Developed unit tests using Jasmine to adhere to best practices and increase code quality'
       ],
       linkInfo: []
     },

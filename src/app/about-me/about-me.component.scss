@@ -1,23 +1,40 @@
 .about-me {
-	//TODO: Need media query
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 2rem;
+  // Web
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  // Mobile
+  @media screen and (max-width: 719px){
+    flex-direction: column;
+  }
 
-	.about-me-text {
-		width: 38rem;
-		margin-right: 4rem;
-		color: rgb(196, 215, 245);
-	}
-	.about-me-pic {
-		width: 25rem;
-		height: 25rem;
+  .about-me-text {
+    color: rgb(196, 215, 245);
+    text-indent: 5%;
+    // Web
+    @media screen and (min-width: 719px) {
+      width: 38rem;
+      margin-right: 4rem;
+    }
+    // Mobile
+    @media screen and (max-width: 719px) {
+      width: 26rem;
+    }
+  }
 
-		.about-me-img {
-			width: 100%;
-			height: 100%;
-			object-fit: contain;
-		}
-	}
+  .about-me-pic {
+    width: 25rem;
+    height: 25rem;
+    // Mobile
+    @media screen and (max-width: 719px) {
+      margin: -3rem;
+    }
+
+    .about-me-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
 }

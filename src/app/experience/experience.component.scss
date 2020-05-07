@@ -1,11 +1,12 @@
 .experience {
 
-  .timeline {
+  // Web
+  .timeline-web {
     justify-content: center;
     display: flex;
 
     .mat-drawer-container {
-      width: 60%;
+      width: 75%;
 
       .mat-drawer {
         padding-left: 2rem;
@@ -13,7 +14,6 @@
         .mat-list-item {
           padding-top: 2rem;
           &:hover {
-            //color: rgb(129, 147, 175);
             color: rgb(253, 230, 101);
           }
         }
@@ -28,9 +28,26 @@
         padding: 4.5rem 0 7.5rem 2rem;
 
         .event-display {
-          padding: 2rem;
+          padding: 2rem 1rem;
           text-align: center;
         }
+      }
+    }
+  }
+
+  // Mobile
+  .timeline-mobile {
+    padding: 1rem 1rem;
+
+    .timeline-mobile-container {
+      padding: 1.5rem 0;
+
+      .timeline-mobile-label {
+        color: rgb(253, 230, 101);
+        text-align: center;
+      }
+      .timeline-mobile-info {
+        text-align: center;
       }
     }
   }

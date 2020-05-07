@@ -8,14 +8,21 @@
     justify-content: center;
 
     .project {
-      max-width: 35%;
-      flex: 0 50%;
-      padding: 2rem 4rem;
       z-index: 0;
       position: relative;
-      opacity: .9;
+      opacity: .8;
       &:hover {
         opacity: 1;
+      }
+      // Web
+      @media screen and (min-width: 856px) {
+        padding: 2rem 4rem;
+        flex: 0 50%;
+        max-width: 35%;
+      }
+      // Mobile
+      @media screen and (max-width: 856px) {
+        max-width: 51%;
       }
 
       .mat-card-header {
@@ -29,6 +36,10 @@
 
       .mat-card-content {
         text-align: center;
+        // Mobile
+        @media screen and (max-width: 856px) {
+          margin: 0 -5rem;
+        }
       }
     }
   }

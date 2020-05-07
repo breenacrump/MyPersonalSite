@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MobileWidthCheckService } from '../services/mobile-width-check.service';
 
 @Component({
   selector: 'experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss']
 })
-export class ExperienceComponent {
+export class ExperienceComponent implements OnInit {
 
 	public events = [
 		{
@@ -33,14 +34,20 @@ export class ExperienceComponent {
 			display: false
 		}
 	];
-
 	public eventDisplayedIndex: number = 0;
 
-  constructor() { }
+  constructor(private mobileWidthCheck: MobileWidthCheckService) { }
+
+  ngOnInit() {
+  }
 
 	eventClicked(index: number) {
 		this.events[this.eventDisplayedIndex].display = false;
 		this.events[index].display = true;
 		this.eventDisplayedIndex = index;
 	}
+
+	isMobileWidth() {
+    return this.mobileWidthCheck.isMobileWidth();
+  }
 }

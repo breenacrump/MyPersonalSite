@@ -5,36 +5,56 @@
     height: 100%;
 
     .main-header {
-		background-image: url('../assets/img/AbstractAiArt.jpg');
-		// TODO: Need a media query and small view will have background-size: auto;
-		background-size: cover;
-		background-position: top center;
-		background-color: rgba(255,255,255,0.15);
-		background-blend-mode: lighten;
-		height: 40%;
-        text-align: center;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+      //background-size: cover;
+      background-image: url('../assets/img/AbstractAiArt.jpg');
+      background-position: top center;
+      background-color: rgba(255,255,255,0.15);
+      background-blend-mode: lighten;
+      height: 40%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // Web
+      @media screen and (min-width: 719px) {
+        background-size: cover;
+      }
+      // Mobile
+      @media screen and (max-width: 719px) {
+        background-size: auto;
+      }
 
 		.main-personal-container {
 			padding: 1rem 0;
 
 			.main-header-img {
-				//TODO:Need a media query
-				width: 12vw;
-				height: 25vh;
-				border-radius: 50%;
+        border-radius: 50%;
+        // Web
+        @media screen and (min-width: 615px) {
+          width: 12vw;
+          height: 25vh;
+        }
+        // Mobile
+        @media screen and (max-width: 615px) {
+          width: 25vw;
+          height: 22vh;
+        }
 			}
 
 			.main-header-name {
-				//TODO:Need a media query
-				margin: 0;
-				font-size: 2.5rem;
-				font-family: 'Helvetica', sans-serif;
-				letter-spacing: .5rem;
-				text-transform: uppercase;
-				color: rgb(253, 230, 101);
+        margin: 0;
+        font-family: 'Helvetica', sans-serif;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+        color: rgb(253, 230, 101);
+        // Web
+        @media screen and (min-width: 719px) {
+          font-size: 2.5rem;
+        }
+        // Mobile
+        @media screen and (max-width: 719px) {
+          font-size: 2rem;
+        }
 			}
 		}
 	}

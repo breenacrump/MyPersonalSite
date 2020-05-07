@@ -1,20 +1,20 @@
 <div class="project-modal">
   <h1 mat-dialog-title class="project-modal-title">{{data.name}} Responsibilities</h1>
-    <div mat-dialog-content class="project-modal-content">
-      <ul>
-        <li class="bullet" *ngFor="let detail of data.details">
-          {{detail}}
-        </li>
-      </ul>
-      <div *ngIf="data.linkInfo.length" class="project-modal-links">
-        <div class="link-info-container">
-          <div class="info" *ngFor="let info of data.linkInfo">
-            <a target="_blank" rel="noopener noreferrer" href={{info.source}} class="link">{{info.linkName}}</a>
-          </div>
+  <div mat-dialog-content class="project-modal-content">
+    <ul>
+      <li class="bullet" *ngFor="let detail of data.details">
+        {{detail}}
+      </li>
+    </ul>
+    <div *ngIf="data.linkInfo.length" class="project-modal-links">
+      <div class="link-info-container">
+        <div class="info" *ngFor="let info of data.linkInfo">
+          <a target="_blank" rel="noopener noreferrer" href={{info.source}}>{{info.linkName}}</a>
         </div>
       </div>
     </div>
-    <div mat-dialog-actions class="project-modal-footer">
-      <button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial class="project-modal-close-btn">Close</button>
-    </div>
+  </div>
+  <div mat-dialog-actions class="project-modal-footer">
+    <button mat-raised-button [mat-dialog-close]="true" cdkFocusInitial class="project-modal-close-btn">Close</button>
+  </div>
 </div>
