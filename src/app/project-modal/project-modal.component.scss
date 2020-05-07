@@ -7,8 +7,6 @@
   bottom: 0;
   right: 0;
   margin: auto;
-  //width: 800px;
-  //height: 400px;
   opacity: .9;
   // Web
   @media screen and (min-width: 840px) {
@@ -17,8 +15,8 @@
   }
   // Mobile
   @media screen and (max-width: 840px) {
-    width: 450px;
-    height: 400px;
+    width: 350px;
+    height: 470px;
   }
 
   .project-modal-title {
@@ -35,7 +33,7 @@
     }
     // Mobile
     @media screen and (max-width: 840px) {
-      height: 62%;
+      height: 63%;
     }
 
     .bullet:not(:first-child) {
@@ -45,14 +43,24 @@
 
   .project-modal-links {
     padding-top: 3rem;
+    // Mobile
+    @media screen and (max-width: 840px) {
+      padding-top: 0;
+    }
 
     .link-info-container {
       display: flex;
       justify-content: space-evenly;
+      // Web
+      @media screen and (min-width: 840px) {
+
+      }
+      // Mobile
+      @media screen and (max-width: 840px) {
+        flex-direction: column;
+      }
 
       .info {
-        //padding: 0 3rem;
-        //font-size: 18px;
         white-space: nowrap;
 
         // Web
@@ -63,7 +71,7 @@
         // Mobile
         @media screen and (max-width: 840px) {
           font-size: 17px;
-          padding: 0 .5rem;
+          padding: .5rem 0;
         }
 
         a:link {
