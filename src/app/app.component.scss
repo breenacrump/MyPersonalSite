@@ -16,10 +16,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		
+
 		.main-personal-container {
-			// opacity: 1 !important;
-	
+			padding: 1rem 0;
+
 			.main-header-img {
 				//TODO:Need a media query
 				width: 12vw;
@@ -41,7 +41,7 @@
 
     .main-container {
 		height: 60%;
-		
+
 		.mat-tab-group {
 			color: rgb(196, 215, 245);
 		}

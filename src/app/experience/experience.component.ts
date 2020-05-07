@@ -11,7 +11,7 @@ export class ExperienceComponent {
 		{
 			label: 'Jan 2018 - Now',
 			title: 'Promoted to Front-End Software Engineer',
-      content: 'Front-End developer for GE Power and Assignment Leader/Mentor for two front-end interns. Provided technical guidance and professional mentorship while supervising their development work.',
+      content: 'Front-End developer for GE Power and Assignment Leader/Mentor for two front-end interns. Provide technical guidance and professional mentorship while supervising their development work.',
 			display: true
 		},
 		{

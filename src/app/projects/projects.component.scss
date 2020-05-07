@@ -1,4 +1,6 @@
 .projects {
+  padding: 0;
+  margin: 0;
 
   .projects-container {
     display: flex;
@@ -9,6 +11,12 @@
       max-width: 35%;
       flex: 0 50%;
       padding: 2rem 4rem;
+      z-index: 0;
+      position: relative;
+      opacity: .9;
+      &:hover {
+        opacity: 1;
+      }
 
       .mat-card-header {
         padding-bottom: .5rem;
