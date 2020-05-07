@@ -30,12 +30,20 @@
         justify-content: center;
 
         .project-name {
-          font-size: 20px;
+          font-size: 22px;
+          text-transform: uppercase;
+          white-space: nowrap;
         }
+      }
+
+      .project-img {
+        border-radius: 5%;
       }
 
       .mat-card-content {
         text-align: center;
+        font-size: 15px;
+        color: rgb(130, 146, 175);
         // Mobile
         @media screen and (max-width: 856px) {
           margin: 0 -5rem;
